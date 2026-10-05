@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Online Shopping System</title>
+</head>
+
+<body>
+
+<h2>ONLINE SHOPPING SYSTEM</h2>
+
+<form action="insert_order.php" method="POST">
+
+    Name<br>
+    <input type="text" name="username" required>
+    <br><br>
+
+    Email<br>
+    <input type="email" name="email" required>
+    <br><br>
+
+    Product<br>
+    <input type="text" name="product" required>
+    <br><br>
+
+    Quantity<br>
+    <input type="number" name="quantity" min="1" max="10" required>
+    <br><br>
+
+    Price<br>
+    <input type="number" name="price" step="0.01" required>
+    <br><br>
+
+    <input type="submit" value="Place Order">
+
+</form>
+
+<br>
+
+<a href="view_orders.php">View All Orders</a>
+
+</body>
+</html>
